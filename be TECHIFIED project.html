@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Landing page (BE TECHIFIED project)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     
 <style>
     button{
@@ -15,7 +16,7 @@
         text-align:center; 
     }
     h1{
-        font-family: Georgia, serif;
+        font-family: Playfair Display;
         font-weight: 200;
         font-size: 90px;
     }
@@ -27,32 +28,50 @@
         font-size: 25px;
         font-weight: 200;
     }
+    /* align header contents: site title left, button right */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
     a{
         font-size:15px;
-        text-decoration:none;
+        text-decoration:none;   
         margin-right: 8px;
+        color:gray;
+        text-align:left;
         }
     footer{
         margin-top:160px;
         color:#30396054;
         text-align: center; 
     }
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
 </style>
 </head>
 <body>
     <header>
         <b>Medium</b>
-        <nav>
-             <a href="#">Home</a>
-             <a href="#">Our Story</a>
-             <a href ="#">Services</a>
-             <a href="#">Contact</a>
-        </nav>
+        <button class="btn">Get started</button>
     </header>
     <h1>Human stories & ideas</h1>
-    <h4>A place to read, write and deepen your understanding</h4>
+    <h4>A place to read, write, and deepen your understanding</h4>
     <a href="https://www.medium.com"><button>Start Reading</button> 
     </a>
-    <footer>© copyright Muhammad</footer> 
+    <footer> 
+        <nav>
+             <a href="#">About</a>
+             <a href="#">Help</a>
+             <a href ="#">Terms</a>
+             <a href="#">Privacy</a>
+        </nav>
+    </footer> 
 </body>
 </html>
