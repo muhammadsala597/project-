@@ -8,7 +8,7 @@
                 
             }
             img{
-                border-radius:100px;
+                border-radius:90px;
             }
             h1{
     color:#006400;
@@ -38,49 +38,63 @@
                 width:80%;
                 margin: 10px auto;
                 border:none;
-                border:1px solid lightgray;
+                border:1px solid lightgreen;
                 padding: 10px;
-                border-radius:5px
+                border-radius:5px;
+                text-align:center;
             }
             .container,.container1{
                 width:90%;
-                max-width:300px;
+                max-width:500px;
                 padding:20px;
             }
-            .submit{
+            .v{
                 background-color:#006400;
                 padding:10px 50px;
                 border-radius:30px;
                 cursor:pointer;
-                border:none;
                 color:white;
+                border:none;                     
             }
-            em{
+            select{
+                width:86%;
+                border:none;
+                padding:10px;
+                border:1px solid lightgreen;
+                border-radius:5px;
+                margin:10px auto;
+            }
+            label{
+                display:block;
                 margin-top:10px;
-                color:gray;
             }
-            
         </style>
     </head>
     <body>
-        <header><img src="https://i.ibb.co/HfBkrFp6/IMG-20260624-WA0001.jpg" alt="logo" width="80"></header>
+        <header><img src="https://i.ibb.co/HfBkrFp6/IMG-20260624-WA0001.jpg" alt="logo" width="70"></header>
         <h1>Daarul Quran Wat-Tawheed Madrasah</h1>
-        <em>motto: people of the Quran, people of Allah and His specialties</em>
         <div class="container">
-            <p>A place where students grow in wisdom, discipline, and devotion while preparing for success in life and the Hereafter.</p>
+            <p>Nurturing young minds with the light of the Quran and Sunnah, building strong character, sound knowledge, and a lifelong love for Islam.</p>
         </div>
         <div><p>To enroll,  fill the below form and click "submit"</p></div>
         <div class="container1">
          <form>
              <label for="i">Name:</label>
-             <input id="i" placeholder="enter your name"><br>
+             <input id="i" placeholder="Enter your name" name="pn" required><br>
              <label for="ii">Child's Name:</label>
-             <input id="ii" placeholder="enter the child's name"><br>
+             <input id="ii" placeholder="Enter the child's name" name="cn" required><br>
              <label for="iii">Phone No:</label>
-             <input id="iii" type="number" placeholder="enter your phone number"><br>
-             <button class="submit">Submit</button> 
+             <input id="iii" type="tel" placeholder="Enter your phone number" name="tel" required><br>
+             <label for="iv">Gender:</label>
+             <select id="iv" name="sex">
+                 <option> Male </option>
+                 <option> Female </option>
+             </select>
+             <input type="submit" class="v">
          </form>
-         
         </div>
+        <footer>
+    <p>&copy; 2026 Daarul Quran Wat-Tawheed Madrasah. All Rights Reserved.</p>
+</footer>
     </body>
 </html>
