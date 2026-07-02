@@ -1,0 +1,84 @@
+<!-- created by: Muhammad Salawu -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+             body{
+                 background-color:#1E293B;
+                 display:flex;
+                 justify-content:center;
+                 align-items:center;
+                 height:100vh
+             }
+            .container{
+                width:300px;
+                background-color:#0F172A;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding:10px 10px;
+                gap:10px;
+                border-radius:20px;
+                margin:auto;
+            }
+            button{
+                background-color:#2563EB;
+                color:white;
+                cursor:pointer;
+                border:none;
+                border-radius:40px;
+                width:100%;
+                height:60px;
+                font-size:20px   
+            }
+            .display{
+                grid-column:1 / 5;
+                background:white;
+                height:50px;
+                margin:10px;
+                border-radius:10px;
+                text-align:right;
+                padding:10px;
+            }
+            .operator1{
+                background-color:green;
+            }
+            .operator2,.operator3,.operator4,.operator6{
+                background-color:#F59E0B;
+            }
+            .operator5{
+                background-color:#EF4444;
+            }
+            .operator7{
+                background-color:#10B981;
+            }      
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <div class="display">0</div>
+           <div class="btn1"><button>7</button></div>
+           <div class="btn2"><button>8</button></div>
+           <div class="btn3"><button>9</button></div>
+           <div class="btn4"><button class="operator1">DEL</button></div>
+           <div class="btn5"><button>4</button></div>
+           <div class="btn6"><button>5</button></div>
+           <div class="btn7"><button>6</button></div>
+           <div class="btn8"><button class="operator2">/</button></div>
+           <div class="btn9"><button>1</button></div>
+           <div class="btn10"><button>2</button></div>
+           <div class="btn11"><button>3</button></div>
+           <div class="btn12"><button class="operator3">*</button></div>
+           <div class="btn13"><button>.</button></div>
+           <div class="btn14"><button>00</button></div>
+           <div class="btn15"><button>0</button></div>
+           <div class="btn16"><button class="operator4">-</button></div>
+           <div class="btn17"><button>(</button></div>
+           <div class="btn18"><button>)</button></div>
+           <div class="btn19"><button>%</button></div>
+           <div class="btn20"><button class="operator6">+</button></div>
+           <div class="btn21"><button class="operator5">CE</button></div>
+           <div class="btn22"><button class="operator7">=</button></div>
+       </div> 
+    </body>
+</html>
