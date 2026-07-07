@@ -12,7 +12,8 @@
                 border-radius:90px;
             }
             h1{
-    color:#006400;
+            color:#006400;
+            margin-bottom: 0px;
             }
             body{
                 background:linear-gradient(to bottom, #E8F5E9, #C8E6C9);
@@ -55,7 +56,8 @@
                 border-radius:30px;
                 cursor:pointer;
                 color:white;
-                border:none;                     
+                border:none;
+                user-select:none;                     
             }
             select{
                 width:86%;
@@ -69,16 +71,38 @@
                 display:block;
                 margin-top:10px;
             }
+            em{
+                color: lightgreen;
+                margin-top: 10px;
+            }
+            a{
+                text-decoration:none;
+                color:#9ACD32;
+                font-weight:bold;
+                padding: 30px;
+                margin: 10px;
+            }
+            nav{
+                margin: 20px;
+            }
         </style>
     </head>
     <body>
-        <header><img src="https://i.ibb.co/HfBkrFp6/IMG-20260624-WA0001.jpg" alt="logo" width="70"></header>
+        <header id="home"><img src="https://i.ibb.co/HfBkrFp6/IMG-20260624-WA0001.jpg" alt="logo" width="70"></header>
         <h1>Daarul Quran Wat-Tawheed Madrasah</h1>
-        <div class="container">
+        <em><small>Motto: People of the quran, Household of Allah and His specialities</small></em><br>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About Us</a> |
+            <a href="#enroll">Enroll</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="container" id="about">
             <p>Nurturing young minds with the light of the Quran and Sunnah, building strong character, sound knowledge, and a lifelong love for Islam.</p>
         </div>
         <div><p>To enroll,  fill the below form and click "submit"</p></div>
-        <div class="container1">
+        <div class="container1" id="enroll">
+            <h2>Enrollment Form</h2>
          <form>
              <label for="i">Name:</label>
              <input id="i" placeholder="Enter your name" name="pn" required><br>
@@ -91,10 +115,10 @@
                  <option> Male </option>
                  <option> Female </option>
              </select>
-             <input type="submit" class="v">
+             <input type="submit" class="v" onclick="alert('Details submitted successfully!')">
          </form>
         </div>
-        <footer>
+        <footer id="contact">
     <p>© 2026 Daarul Quran Wat-Tawheed Madrasah. All Rights Reserved.</p>
 </footer>
     </body>
