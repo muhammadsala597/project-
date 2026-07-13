@@ -24,6 +24,29 @@
               border:1px solid lightgray;
               width:230px;
           } 
+          .password-container{
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              gap:5px;
+              margin:10px auto;
+          }
+          .password-input{
+              width: 195px;
+              padding:8px;
+              border:1px solid lightgray;
+              margin-right:0;
+              margin:auto;
+          }
+          .password{
+              width: 34px;
+              height: 33px;
+              margin-left:0;
+              margin:auto;
+              cursor:pointer;
+              border:1px solid lightgray;
+              background-color: white;
+          }
           .login{
               width:245px;
               padding:8px;
@@ -31,6 +54,7 @@
               background-color:#5BC0DE;
               border:none;
               margin-bottom:40px;
+              cursor:pointer;
           }
           h2{
               margin-top:30px;
@@ -58,7 +82,7 @@
            <h2>Login to your<br> account</h2>
            <form>
                <input type="email" placeholder="✉️ e-Mail Address" required><br>
-               <input type="password" placeholder="🔒 Password" required><br>
+               <div class="do"><input type="password" placeholder="🔒 Password" required class="password-input"><button class="password" type="button">👁️‍🗨️</button></div><br>
                <button type="submit" class="login"> Log in </button>
            </form>
            <p class="passwordreset">Forgot password? Click <a href="https://www.jambefacility.edu.ng" target="blank">here</a> to reset it</p> 
