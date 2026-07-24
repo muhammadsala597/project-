@@ -8,6 +8,9 @@ Hi, I'm Muhammad, a self-taught web developer from Nigeria.
 - Calculator
 - BE TECHIFIED Landing Page
 - Madrasah Website
+- A metronome 
+- An analog clock demo
+- A post utme app 
 
 ## Skills
 - HTML5
